@@ -8,7 +8,7 @@ public class Carro {
 		this.motor = new Motor(this);
 	}
 	
-	void acelerar() {
+	public void acelerar() {
 		if (motor.fatorInjecao <2.6) {
 			motor.fatorInjecao += 0.4;
 		}
