@@ -4,9 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ConjuntoBaguncado {
-	 @SuppressWarnings({ "rawtypes", "unchecked" })
+	 @SuppressWarnings({ "rawtypes" })
 	public static void main(String[] args) {
-		HashSet conjunto = new HashSet();
+		HashSet<Comparable> conjunto = new HashSet<Comparable>();
 		
 		conjunto.add(1.2);  // double -> Double
 		conjunto.add(true); // boolean -> Boolean
@@ -29,7 +29,7 @@ public class ConjuntoBaguncado {
 		System.out.println(conjunto.contains('x'));
 		System.out.println(conjunto.contains(1));
 		
-		Set nums = new HashSet();
+		Set<Integer> nums = new HashSet<Integer>();
 		
 		nums.add(1);
 		nums.add(2);
